@@ -25,10 +25,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/17/2013 08:36:22</publishTime>
     </File>
     <File Include="bin/Fashion.dll">
-      <publishTime>01/21/2020 15:03:03</publishTime>
+      <publishTime>01/21/2020 15:14:27</publishTime>
     </File>
     <File Include="bin/Fashion.pdb">
-      <publishTime>01/21/2020 15:03:03</publishTime>
+      <publishTime>01/21/2020 15:14:27</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>12/01/2016 04:37:42</publishTime>
@@ -202,7 +202,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2020 12:35:42</publishTime>
     </File>
     <File Include="Default.aspx">
-      <publishTime>01/21/2020 14:58:27</publishTime>
+      <publishTime>01/21/2020 15:15:35</publishTime>
     </File>
     <File Include="f1.jpg">
       <publishTime>01/21/2020 13:56:40</publishTime>
