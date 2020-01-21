@@ -35,10 +35,10 @@
             <aside id="colorlib-aside" role="complementary" class="js-fullheight">
                 <nav id="colorlib-main-menu" role="navigation">
                     <ul>
-                        <li><a href="Default.aspx">Home</a></li>
-                        <li><a href="Designs.aspx">Designs</a></li>
-                        <li><a href="Fabric.aspx">Fabric</a></li>
-                        <li><a href="Color.aspx">Color Chart</a></li>
+                        <li class=""><a href="Default.aspx">Home</a></li>
+                        <li class=""><a href="Designs.aspx">Designs</a></li>
+                        <li class=""><a href="Fabric.aspx">Fabric</a></li>
+                        <li class=""><a href="Color.aspx">Color Chart</a></li>
                         <%--<li><a href="contact.html">Contact</a></li>--%>
                     </ul>
                 </nav>
@@ -50,7 +50,9 @@
                     <p class="pfooter">
                         Copyright &copy;
                     <script type="text/javascript">document.write(new Date().getFullYear());</script>
-                        All rights reserved <br /><i class="icon-heart" aria-hidden="true"></i>by <a href="https://www.ppinifotech.com/" target="_blank">PPInfotech Technologies</a>
+                        All rights reserved
+                        <br />
+                        <i class="icon-heart" aria-hidden="true"></i>by <a href="https://www.ppinifotech.com/" target="_blank">PPInfotech Technologies</a>
                     </p>
                 </div>
             </aside>

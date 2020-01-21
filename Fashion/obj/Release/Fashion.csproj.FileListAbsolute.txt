@@ -33,3 +33,4 @@ E:\PPInfotech\Projects\Fashion_Repo\Fashion\bin\Microsoft.AI.Web.xml
 E:\PPInfotech\Projects\Fashion_Repo\Fashion\obj\Release\Fashion.csproj.CoreCompileInputs.cache
 E:\PPInfotech\Projects\Fashion_Repo\Fashion\obj\Release\Fashion.dll
 E:\PPInfotech\Projects\Fashion_Repo\Fashion\obj\Release\Fashion.pdb
+E:\PPInfotech\Projects\Fashion_Repo\Fashion\obj\Release\Fashion.csprojResolveAssemblyReference.cache

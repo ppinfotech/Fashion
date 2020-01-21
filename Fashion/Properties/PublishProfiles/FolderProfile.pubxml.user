@@ -25,52 +25,52 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/17/2013 08:36:22</publishTime>
     </File>
     <File Include="bin/Fashion.dll">
-      <publishTime>01/21/2020 15:14:27</publishTime>
+      <publishTime>01/21/2020 15:21:09</publishTime>
     </File>
     <File Include="bin/Fashion.pdb">
-      <publishTime>01/21/2020 15:14:27</publishTime>
+      <publishTime>01/21/2020 15:21:09</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>12/01/2016 04:37:42</publishTime>
+      <publishTime>01/12/2016 04:37:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>12/08/2016 00:15:42</publishTime>
+      <publishTime>08/12/2016 00:15:42</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>12/08/2016 00:20:34</publishTime>
+      <publishTime>08/12/2016 00:20:34</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>12/07/2016 03:45:48</publishTime>
+      <publishTime>07/12/2016 03:45:48</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>12/08/2016 00:19:10</publishTime>
+      <publishTime>08/12/2016 00:19:10</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>12/08/2016 00:20:34</publishTime>
+      <publishTime>08/12/2016 00:20:34</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>12/07/2016 03:39:52</publishTime>
+      <publishTime>07/12/2016 03:39:52</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
       <publishTime>07/31/2013 05:27:30</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
-      <publishTime>02/12/2014 03:56:04</publishTime>
+      <publishTime>12/02/2014 03:56:04</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>08/16/2017 01:42:32</publishTime>
     </File>
     <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
-      <publishTime>09/06/2013 23:50:12</publishTime>
+      <publishTime>06/09/2013 23:50:12</publishTime>
     </File>
     <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
-      <publishTime>09/06/2013 23:50:22</publishTime>
+      <publishTime>06/09/2013 23:50:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/05/2012 23:38:46</publishTime>
+      <publishTime>05/01/2012 23:38:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>08/04/2014 09:03:56</publishTime>
+      <publishTime>04/08/2014 09:03:56</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>06/28/2016 03:20:24</publishTime>
@@ -151,10 +151,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/28/2016 03:20:24</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>02/12/2014 03:56:04</publishTime>
+      <publishTime>12/02/2014 03:56:04</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>09/11/2013 05:58:38</publishTime>
+      <publishTime>11/09/2013 05:58:38</publishTime>
     </File>
     <File Include="Color.aspx">
       <publishTime>01/21/2020 13:08:27</publishTime>
@@ -292,7 +292,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2020 12:35:42</publishTime>
     </File>
     <File Include="Home.Master">
-      <publishTime>01/21/2020 12:55:45</publishTime>
+      <publishTime>01/21/2020 15:41:56</publishTime>
     </File>
     <File Include="images/about.jpg">
       <publishTime>01/21/2020 12:35:42</publishTime>
@@ -397,10 +397,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/21/2020 12:35:42</publishTime>
     </File>
     <File Include="js/webcam.js">
-      <publishTime>01/21/2020 13:54:44</publishTime>
+      <publishTime>01/21/2020 15:58:26</publishTime>
     </File>
     <File Include="js/webcam.min.js">
-      <publishTime>01/21/2020 13:54:44</publishTime>
+      <publishTime>01/21/2020 15:32:01</publishTime>
     </File>
     <File Include="main2.png">
       <publishTime>01/21/2020 13:56:26</publishTime>
