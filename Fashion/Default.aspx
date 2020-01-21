@@ -32,6 +32,11 @@
         function RemoveColor() {
             document.getElementById('divBG').className = '';
         }
+        function fillPallet(colorcode) {
+            var clr = colorcode.innerHTML;
+            document.getElementById("txtColor").value = clr;
+            fillColor(document.getElementById("txtColor"));
+        }
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -43,12 +48,12 @@
             <div class="col-md-12">
                 <div class="blog-entry ftco-animate d-md-flex">
                     <div class="row">
-                        <div class="col-md-6" style="text-align: center;">
-                            <div id="my_camera"></div>
+                        <div class="col-md-12">
+                            <center><div id="my_camera" ></div></center>
                             <script language="JavaScript">
                                 Webcam.set({
-                                    width: 450,
-                                    height: 100,
+                                    width: 500,
+                                    height: 150,
 
                                     image_format: 'jpeg',
                                     jpeg_quality: 100
@@ -60,20 +65,16 @@
                             </div>
                         </div>
 
+                        <div class="col-md-12">
+                            <h3 class="sidebar-heading">Fabric Size:<input type="number" value="200" id="size" onchange="changeSize(this)" class="form-control-sm" /></h3>
+                            <h3 class="sidebar-heading">Fabric Color:
+                            <asp:TextBox ID="txtColor" TextMode="Color" onchange="fillColor(this)" ClientIDMode="Static" runat="server"></asp:TextBox>&nbsp;&nbsp;&nbsp;<input type="button" class="btn btn-primary" value="Remove Fabric Color" onclick="RemoveColor()" /></h3>
+                            <h3 class="sidebar-heading">Select Color Code</h3>
+                            <div id="divColorChart" runat="server" class="row" style="overflow-y: scroll; max-height: 200px;"></div>
 
-
-                        <div class="col-md-6">
-                            Select Fabric<br />
-                            <br />
-                            <img src="f1.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f2.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f3.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f4.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f5.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f6.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f7.jpg" height="100" onclick="fillBG(this)" />
-                            <img src="f8.jpg" height="100" onclick="fillBG(this)" />
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -84,15 +85,15 @@
     <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
 
         <div class="sidebar-box ftco-animate">
-            <h3 class="sidebar-heading">Fabric Size:<input type="number" value="200" id="size" onchange="changeSize(this)" /></h3>
-            <h3 class="sidebar-heading">Fabric Color:
-            <asp:TextBox ID="txtColor" TextMode="Color" onchange="fillColor(this)" ClientIDMode="Static" runat="server"></asp:TextBox></h3>
-            <input type="button" class="btn btn-primary" value="Remove Fabric Color" onclick="RemoveColor()" />
-            <br />
-            <br />
-            <h3 class="sidebar-heading">Select Color Code</h3>
-            <div id="divColorChart" runat="server" class="row" style="overflow-y: scroll; max-height: 200px;"></div>
-
+            <h3>Select Fabric</h3>
+            <img src="f1.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f2.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f3.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f4.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f5.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f6.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f7.jpg" height="100" onclick="fillBG(this)" />
+            <img src="f8.jpg" height="100" onclick="fillBG(this)" />
         </div>
     </div>
 </asp:Content>
