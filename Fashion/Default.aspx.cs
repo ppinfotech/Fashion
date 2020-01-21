@@ -15,21 +15,23 @@ namespace Fashion
         {
             if (!IsPostBack)
             {
-                color();
+                fillMain();
             }
         }
-        private void color()
+
+        private void fillMain()
         {
             DataSet ds = new DataSet();
-            clsColor objColor = new clsColor();
-            objColor.Action = "SELECT";
-            ds = objColor.fnColor();
+            clsDesign objDesign = new clsDesign();
+            objDesign.Action = "TOP6";
+            ds = objDesign.fnDesign();
+            ViewState["dt"] = ds.Tables[0];
             string htm = string.Empty;
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
             {
-                htm += "<div class='col-md-2 col-sm-4 col-lg-2 col-xs-4'><p onclick='fillPallet(this)' style='font-size:1px; height:10px; background-color:" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + "; color:" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + ";'>" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + "<p></div>";
+                htm += "<div class='col-md-4 '><a href='Lending.aspx?val=" + ds.Tables[0].Rows[i]["DesignId"].ToString() + "'><img class='img-thumbnail' src='/Design/" + ds.Tables[0].Rows[i]["ImagePath"].ToString() + "'><br><center><p style='font-weight:bold;'>" + ds.Tables[0].Rows[0]["DesignName"].ToString() + "</center></p></a></div>";
             }
-            divColorChart.InnerHtml = htm;
+            divMain.InnerHtml = htm;
         }
     }
 }

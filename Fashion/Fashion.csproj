@@ -409,6 +409,7 @@
     <Content Include="css\owl.video.play.html" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Designs.aspx" />
     <Content Include="Design\media-2101212020033905041892PM.png" />
     <Content Include="Design\pharma-2101212020033310751734PM.jpg" />
     <Content Include="Design\pharma-2101212020033353915807PM.jpg" />
@@ -421,6 +422,7 @@
     <Content Include="f6.jpg" />
     <Content Include="f7.jpg" />
     <Content Include="f8.jpg" />
+    <Content Include="Fabric.aspx" />
     <Content Include="Fabric\chemical101212020040025271476PM.jpg" />
     <Content Include="fonts\flaticon\font\Flaticon.svg" />
     <Content Include="fonts\icomoon\icomoonccfb.svg" />
@@ -542,6 +544,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Designs.aspx.cs">
+      <DependentUpon>Designs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Designs.aspx.designer.cs">
+      <DependentUpon>Designs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fabric.aspx.cs">
+      <DependentUpon>Fabric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fabric.aspx.designer.cs">
+      <DependentUpon>Fabric.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
