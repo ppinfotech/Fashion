@@ -1,0 +1,229 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Fashion.Admin.Panel.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Dashboard :: Panel</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/png" href="../app-assets/images/ico/favicon-32.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <!-- font icons-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/fonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/pace.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <!-- END ROBUST CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-overlay-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END Custom CSS-->
+    <script src="../app-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
+    <%-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').on('keydown', 'input, select, textarea', function (e) {
+
+                var self = $(this)
+                    , form = self.parents('form:eq(0)')
+                    , focusable
+                    , next
+                    ;
+                if (e.keyCode == 13) {
+                    focusable = form.find('input,a,select,textarea').filter(':visible');
+                    next = focusable.eq(focusable.index(this) + 1);
+                    if (next.length) {
+                        next.focus();
+                    } else {
+                        form.submit();
+                    }
+                    return false;
+                }
+            });
+        });
+    </script>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body data-plus-as-tab="true" data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns  fixed-navbar" style="font-family: 'Segoe UI'">
+    <form id="form1" runat="server">
+        <asp:Label ID="lblAdminId" runat="server" Text="" Visible="false"></asp:Label>
+        <asp:Label ID="lblIsSuperAdmin" runat="server" Text="" Visible="false"></asp:Label>
+        <asp:Label ID="lblAdminName" runat="server" Text="" Visible="false"></asp:Label>
+
+        <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-light navbar-shadow">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
+                        <li class="nav-item"><a class="navbar-brand nav-link">
+                            <img alt="branding logo" height="35" src="../../images/logo.jpeg" data-expand="../../images/logo.jpeg" data-collapse="../../images/logo.jpeg" class="brand-logo">
+                            <%--<p style="color: white; font-size: 20px; font-family: 'Segoe UI'">Trial Room</p>--%>
+                        </a></li>
+                        <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content container-fluid">
+                    <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item hidden-sm-down"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5"></i></a></li>
+                            <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon icon-expand2"></i></a></li>
+
+                        </ul>
+                        <ul class="nav navbar-nav float-xs-right">
+                            <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online">
+                                <img src="../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span><span class="user-name"><asp:Label ID="lblName" runat="server" Text=""></asp:Label></span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <%--<a href="#" class="dropdown-item"><i class="icon-head"></i>Edit Profile</a>--%>
+                                    <a href="ChangePassword.aspx" class="dropdown-item"><i class="icon-key2"></i>Change Password</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="LogOut.aspx" class="dropdown-item"><i class="icon-power3"></i>Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+        <!-- main menu-->
+        <div data-scroll-to-active="true" class="main-menu menu-fixed menu-light menu-bordered menu-accordion menu-shadow">
+
+            <!-- main menu content-->
+            <div class="main-menu-content">
+                <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+                    <li id="liDashboard" runat="server" class="nav-item"><a href="Dashboard.aspx"><i class="icon-paper"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Dashboard</span></a>
+                    </li>
+                    <li id="liCategory" runat="server" class="nav-item"><a href="Category.aspx"><i class="icon-section"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Category</span></a>
+                    </li>
+                    <li id="liDesign" runat="server" class="nav-item"><a href="Design.aspx"><i class="icon-box"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Design</span></a>
+                    </li>
+                    <li id="liFabric" runat="server" class="nav-item"><a href="Fabric.aspx"><i class="icon-retweet"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Fabric</span></a>
+                    </li>
+                    <li id="liUser" runat="server" class="nav-item"><a href="User.aspx"><i class="icon-user-tie"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">User</span></a>
+                    </li>
+                    <%--
+                    
+                    <li id="liSupplier" runat="server" class="nav-item"><a href="Supplier.aspx"><i class="icon-user-tie"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Supplier</span></a>
+                    </li>
+                    <li id="liSales" runat="server" class="nav-item"><a href="Sales.aspx"><i class="icon-wrench"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Sales</span></a>
+                    </li>
+                    <li id="liPurchase" runat="server" class="nav-item"><a href="Purchase.aspx"><i class="icon-box-add"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Purchase</span></a>
+                    </li>
+                    <li id="liEstimation" runat="server" class="nav-item"><a href="Estimation.aspx"><i class="icon-rupee"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Estimation</span></a>
+                    </li>
+                    
+                    <li id="liDBCR" runat="server" class="nav-item"><a href="DBCR.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Debit/Credit</span></a>
+                    </li>
+                    
+                    <li id="li17" runat="server" class="nav-item"><a href="ContraEntry.aspx"><i class="icon-retweet"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Contra</span></a>
+                    </li>
+                    <li id="li2" runat="server" class="nav-item"><a href="SMS.aspx"><i class="icon-envelop"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">SMS</span></a>                    </li>
+                    <li class=" nav-item" id="liReports" runat="server">
+                        <a><i class="icon-data"></i><span data-i18n="nav.dash.main" class="menu-title">Report</span></a>
+                        <ul class="menu-content">
+                            <li id="liSaleReport" runat="server" class="nav-item"><a href="SalesReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Sales Report</span></a>
+                            </li>
+                            <li id="liPurchaseReport" runat="server" class="nav-item"><a href="PurchaseReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Purchase Report</span></a>
+                            </li>
+                            <li id="liPL" runat="server" class="nav-item"><a href="PLReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">PL Report</span></a>
+                            </li>
+                            <li id="liService" runat="server" class="nav-item"><a href="ServiceReminder.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Servise Reminder Report</span></a>
+                            </li>
+                            <li id="liOutstanding" runat="server" class="nav-item"><a href="OutstandingReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Outstanding Report</span></a>
+                            </li>
+                            <li id="liStock" runat="server" class="nav-item"><a href="StockAlertReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Stock Alert Report</span></a>
+                            </li>
+                            <li id="liLost" runat="server" class="nav-item"><a href="LostCustomerReport.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Lost Customer Report</span></a>
+                            </li>
+                            <li id="liBirthday" runat="server" class="nav-item"><a href="Birthday.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Birthday & Anniversery Report</span></a>
+                            </li>
+                            <li id="li1" runat="server" class="nav-item"><a href="Insurance.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Insurance / HSRP Customer</span></a>
+                            </li>
+                        </ul>
+                    </li>--%>
+                    <%--
+                    <li id="liSales" runat="server" class="nav-item"><a href="Sales.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Sales</span></a>
+                    </li>
+                    <li id="liOrder" runat="server" class="nav-item"><a href="Order.aspx"><i class="icon-money"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Order</span></a>
+                    </li>
+                    
+                    <li id="liMachine" runat="server" class="nav-item"><a href="Machine.aspx"><i class="icon-printer"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Machine</span></a>
+                    </li>
+                    <li id="liMachineCounter" runat="server" class="nav-item"><a href="MachineCounter.aspx"><i class="icon-printer2"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Machine Counter</span></a>
+                    </li>
+                    <li id="liSlip" runat="server" class="nav-item"><a href="Slip.aspx"><i class="icon-paper"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">XEROX Slip</span></a>
+                    </li>
+                    <li id="liDocument" runat="server" class="nav-item"><a href="Document.aspx"><i class="icon-paper"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Document</span></a>
+                    </li>
+                    --%>
+                    <li id="liChange" runat="server" class="nav-item"><a href="ChangePassword.aspx"><i class="icon-key2"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Change Password</span></a>
+                    </li>
+                    <li id="liLogOut" runat="server" class="nav-item"><a href="LogOut.aspx"><i class="icon-power3"></i><span data-i18n="nav.form_layouts.form_layout_basic" class="menu-title">Log Out</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /main menu content-->
+            <!-- main menu footer-->
+            <!-- include includes/menu-footer-->
+            <!-- main menu footer-->
+        </div>
+        <!-- / main menu-->
+        <div class="app-content content container-fluid">
+            <div class="content-wrapper">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <footer class="footer footer-static footer-light navbar-border">
+            <p class="clearfix text-muted text-sm-center mb-0 px-2"><span class="float-md-left d-xs-block d-md-inline-block">Copyright  &copy; 2019, All rights reserved. </span></p>
+        </footer>
+
+        <!-- BEGIN VENDOR JS-->
+        <script src="../app-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
+
+        <script src="../app-assets/vendors/js/ui/tether.min.js" type="text/javascript"></script>
+        <script src="../app-assets/js/core/libraries/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/ui/unison.min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/ui/blockUI.min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/ui/jquery.matchHeight-min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/ui/screenfull.min.js" type="text/javascript"></script>
+        <script src="../app-assets/vendors/js/extensions/pace.min.js" type="text/javascript"></script>
+        <!-- BEGIN VENDOR JS-->
+        <!-- BEGIN PAGE VENDOR JS-->
+        <script src="../app-assets/vendors/js/charts/chart.min.js" type="text/javascript"></script>
+        <!-- END PAGE VENDOR JS-->
+        <!-- BEGIN ROBUST JS-->
+        <script src="../app-assets/js/core/app-menu.js" type="text/javascript"></script>
+        <script src="../app-assets/js/core/app.js" type="text/javascript"></script>
+        <!-- END ROBUST JS-->
+        <!-- BEGIN PAGE LEVEL JS-->
+        <script src="../app-assets/js/scripts/pages/dashboard-2.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL JS-->
+        <link href="../Select2/css/select2.min.css" rel="stylesheet" />
+        <script src="../Select2/js/select2.min.js"></script>
+
+    </form>
+</body>
+</html>
