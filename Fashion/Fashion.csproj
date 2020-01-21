@@ -127,6 +127,273 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\app-assets\css\app.css" />
+    <Content Include="Admin\app-assets\css\bootstrap-extended.css" />
+    <Content Include="Admin\app-assets\css\bootstrap.css" />
+    <Content Include="Admin\app-assets\css\colors.css" />
+    <Content Include="Admin\app-assets\css\core\colors\palette-gradient.css" />
+    <Content Include="Admin\app-assets\css\core\colors\palette-tooltip.css" />
+    <Content Include="Admin\app-assets\css\core\menu\menu-types\vertical-menu.css" />
+    <Content Include="Admin\app-assets\css\core\menu\menu-types\vertical-overlay-menu.css" />
+    <Content Include="Admin\app-assets\css\pages\coming-soon.css" />
+    <Content Include="Admin\app-assets\css\pages\error.css" />
+    <Content Include="Admin\app-assets\css\pages\gallery.css" />
+    <Content Include="Admin\app-assets\css\pages\invoice.css" />
+    <Content Include="Admin\app-assets\css\pages\login-register.css" />
+    <Content Include="Admin\app-assets\css\pages\search.css" />
+    <Content Include="Admin\app-assets\css\pages\timeline.css" />
+    <Content Include="Admin\app-assets\css\pages\under-maintenance.css" />
+    <Content Include="Admin\app-assets\css\plugins\animate\animate.css" />
+    <Content Include="Admin\app-assets\data\jqvmaps\jquery.vmap.sampledata.js" />
+    <Content Include="Admin\app-assets\fonts\flag-icon-css\css\flag-icon.min.css" />
+    <Content Include="Admin\app-assets\fonts\icomoon.css" />
+    <Content Include="Admin\app-assets\fonts\icomoon\icomoonc994.svg" />
+    <Content Include="Admin\app-assets\images\backgrounds\bg-12.jpg" />
+    <Content Include="Admin\app-assets\images\backgrounds\bg-14.jpg" />
+    <Content Include="Admin\app-assets\images\backgrounds\bg-2.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\01.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\02.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\03.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\04.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\05.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\06.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\07.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\08.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\09.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\10.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\11.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\14.jpg" />
+    <Content Include="Admin\app-assets\images\carousel\15.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\1.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\10.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\11.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\12.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\13.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\14.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\15.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\16.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\2.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\23.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\25.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\3.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\4.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\5.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\6.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\7.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\8.jpg" />
+    <Content Include="Admin\app-assets\images\gallery\9.jpg" />
+    <Content Include="Admin\app-assets\images\ico\apple-icon-120.png" />
+    <Content Include="Admin\app-assets\images\ico\apple-icon-152.png" />
+    <Content Include="Admin\app-assets\images\ico\apple-icon-60.png" />
+    <Content Include="Admin\app-assets\images\ico\apple-icon-76.png" />
+    <Content Include="Admin\app-assets\images\ico\favicon-32.png" />
+    <Content Include="Admin\app-assets\images\jvqmap\marker\blue.png" />
+    <Content Include="Admin\app-assets\images\jvqmap\marker\purple.png" />
+    <Content Include="Admin\app-assets\images\jvqmap\marker\red.png" />
+    <Content Include="Admin\app-assets\images\logo\logo2.png" />
+    <Content Include="Admin\app-assets\images\logo\robust-80x80.png" />
+    <Content Include="Admin\app-assets\images\logo\robust-logo-dark-big.png" />
+    <Content Include="Admin\app-assets\images\logo\robust-logo-dark.png" />
+    <Content Include="Admin\app-assets\images\logo\robust-logo-light-big.png" />
+    <Content Include="Admin\app-assets\images\logo\robust-logo-light.png" />
+    <Content Include="Admin\app-assets\images\pages\signature-scan.png" />
+    <Content Include="Admin\app-assets\images\portfolio\width-1200\portfolio-1.jpg" />
+    <Content Include="Admin\app-assets\images\portfolio\width-600\portfolio-14.jpg" />
+    <Content Include="Admin\app-assets\images\portfolio\width-600\portfolio-3.jpg" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-1.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-10.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-11.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-12.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-13.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-15.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-16.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-19.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-2.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-20.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-21.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-24.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-25.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-3.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-4.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-5.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-6.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-7.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-8.png" />
+    <Content Include="Admin\app-assets\images\portrait\small\avatar-s-9.png" />
+    <Content Include="Admin\app-assets\js\core\app-menu.js" />
+    <Content Include="Admin\app-assets\js\core\app.js" />
+    <Content Include="Admin\app-assets\js\core\libraries\bootstrap.min.js" />
+    <Content Include="Admin\app-assets\js\core\libraries\jquery.min.js" />
+    <Content Include="Admin\app-assets\js\scripts\cards\card-charts.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\bar\bar-stacked.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\bar\bar.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\bar\column-stacked.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\bar\column.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\line\line-area.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\line\line-stacked-area.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\line\line.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\pie-doughnut\doughnut-simple.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\pie-doughnut\doughnut.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\pie-doughnut\pie-simple.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\chartjs\pie-doughnut\pie.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\bar\annotations.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\bar\bar.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\bar\stacked-bar.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\line\line.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\line\realtime.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\line\tracking.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\pie\donut-hole.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\pie\interactive-pie.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\pie\label-formatter.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\flot\pie\pie.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\gmaps\maps.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\bar-intervals.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\bar-stacked.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\bar.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\column.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\combo.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\histogram.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\bar\stacked-column.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\area-interval.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\area-stacked-stepped.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\area-stacked.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\area-stepped.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\area.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\line-interval.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\line\line.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\3d-pie-exploded.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\3d-pie.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\donut-exploded.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\donut-rotated.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\donut.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-diff-border.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-diff-invert.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-diff-opacity.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-diff-radius.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-exploded.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie-rotated.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\google\pie\pie.js" />
+    <Content Include="Admin\app-assets\js\scripts\charts\jqvmap\jqvmap.js" />
+    <Content Include="Admin\app-assets\js\scripts\coming-soon\coming-soon.js" />
+    <Content Include="Admin\app-assets\js\scripts\gallery\photo-swipe\photoswipe-script.js" />
+    <Content Include="Admin\app-assets\js\scripts\modal\components-modal.js" />
+    <Content Include="Admin\app-assets\js\scripts\navs\navs.js" />
+    <Content Include="Admin\app-assets\js\scripts\pages\dashboard-2.js" />
+    <Content Include="Admin\app-assets\js\scripts\pages\dashboard-lite.js" />
+    <Content Include="Admin\app-assets\js\scripts\popover\popover.js" />
+    <Content Include="Admin\app-assets\js\scripts\tooltip\tooltip.js" />
+    <Content Include="Admin\app-assets\vendors\css\charts\jqvmap.css" />
+    <Content Include="Admin\app-assets\vendors\css\extensions\pace.css" />
+    <Content Include="Admin\app-assets\vendors\css\ui\prism.min.css" />
+    <Content Include="Admin\app-assets\vendors\js\charts\chart.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.categories.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.navigate.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.pie.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.resize.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.selection.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.stack.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\flot\jquery.flot.time.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\gmaps.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\jquery.vmap.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.africa.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.asia.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.australia.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.europe.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.north-america.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\continents\jquery.vmap.south-america.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\jquery.vmap.usa.js" />
+    <Content Include="Admin\app-assets\vendors\js\charts\jqvmap\maps\jquery.vmap.world.js" />
+    <Content Include="Admin\app-assets\vendors\js\coming-soon\jquery.countdown.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\extensions\pace.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\masonry\masonry.pkgd.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\default-skin\default-skin.css" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\default-skin\default-skin.png" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\default-skin\default-skin.svg" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\default-skin\preloader.gif" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\photoswipe-ui-default.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\photoswipe.css" />
+    <Content Include="Admin\app-assets\vendors\js\gallery\photo-swipe\photoswipe.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\blockUI.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\jquery.matchHeight-min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\prism.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\screenfull.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\tether.min.js" />
+    <Content Include="Admin\app-assets\vendors\js\ui\unison.min.js" />
+    <Content Include="Admin\assets\css\style.css" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Panel\Category.aspx" />
+    <Content Include="Admin\Panel\ChangePassword.aspx" />
+    <Content Include="Admin\Panel\Dashboard.aspx" />
+    <Content Include="Admin\Panel\Design.aspx" />
+    <Content Include="Admin\Panel\Fabric.aspx" />
+    <Content Include="Admin\Panel\LogOut.aspx" />
+    <Content Include="Admin\Select2\css\select2.css" />
+    <Content Include="Admin\Select2\css\select2.min.css" />
+    <Content Include="Admin\Select2\js\i18n\af.js" />
+    <Content Include="Admin\Select2\js\i18n\ar.js" />
+    <Content Include="Admin\Select2\js\i18n\az.js" />
+    <Content Include="Admin\Select2\js\i18n\bg.js" />
+    <Content Include="Admin\Select2\js\i18n\bn.js" />
+    <Content Include="Admin\Select2\js\i18n\bs.js" />
+    <Content Include="Admin\Select2\js\i18n\ca.js" />
+    <Content Include="Admin\Select2\js\i18n\cs.js" />
+    <Content Include="Admin\Select2\js\i18n\da.js" />
+    <Content Include="Admin\Select2\js\i18n\de.js" />
+    <Content Include="Admin\Select2\js\i18n\dsb.js" />
+    <Content Include="Admin\Select2\js\i18n\el.js" />
+    <Content Include="Admin\Select2\js\i18n\en.js" />
+    <Content Include="Admin\Select2\js\i18n\es.js" />
+    <Content Include="Admin\Select2\js\i18n\et.js" />
+    <Content Include="Admin\Select2\js\i18n\eu.js" />
+    <Content Include="Admin\Select2\js\i18n\fa.js" />
+    <Content Include="Admin\Select2\js\i18n\fi.js" />
+    <Content Include="Admin\Select2\js\i18n\fr.js" />
+    <Content Include="Admin\Select2\js\i18n\gl.js" />
+    <Content Include="Admin\Select2\js\i18n\he.js" />
+    <Content Include="Admin\Select2\js\i18n\hi.js" />
+    <Content Include="Admin\Select2\js\i18n\hr.js" />
+    <Content Include="Admin\Select2\js\i18n\hsb.js" />
+    <Content Include="Admin\Select2\js\i18n\hu.js" />
+    <Content Include="Admin\Select2\js\i18n\hy.js" />
+    <Content Include="Admin\Select2\js\i18n\id.js" />
+    <Content Include="Admin\Select2\js\i18n\is.js" />
+    <Content Include="Admin\Select2\js\i18n\it.js" />
+    <Content Include="Admin\Select2\js\i18n\ja.js" />
+    <Content Include="Admin\Select2\js\i18n\ka.js" />
+    <Content Include="Admin\Select2\js\i18n\km.js" />
+    <Content Include="Admin\Select2\js\i18n\ko.js" />
+    <Content Include="Admin\Select2\js\i18n\lt.js" />
+    <Content Include="Admin\Select2\js\i18n\lv.js" />
+    <Content Include="Admin\Select2\js\i18n\mk.js" />
+    <Content Include="Admin\Select2\js\i18n\ms.js" />
+    <Content Include="Admin\Select2\js\i18n\nb.js" />
+    <Content Include="Admin\Select2\js\i18n\ne.js" />
+    <Content Include="Admin\Select2\js\i18n\nl.js" />
+    <Content Include="Admin\Select2\js\i18n\pl.js" />
+    <Content Include="Admin\Select2\js\i18n\ps.js" />
+    <Content Include="Admin\Select2\js\i18n\pt-BR.js" />
+    <Content Include="Admin\Select2\js\i18n\pt.js" />
+    <Content Include="Admin\Select2\js\i18n\ro.js" />
+    <Content Include="Admin\Select2\js\i18n\ru.js" />
+    <Content Include="Admin\Select2\js\i18n\sk.js" />
+    <Content Include="Admin\Select2\js\i18n\sl.js" />
+    <Content Include="Admin\Select2\js\i18n\sq.js" />
+    <Content Include="Admin\Select2\js\i18n\sr-Cyrl.js" />
+    <Content Include="Admin\Select2\js\i18n\sr.js" />
+    <Content Include="Admin\Select2\js\i18n\sv.js" />
+    <Content Include="Admin\Select2\js\i18n\th.js" />
+    <Content Include="Admin\Select2\js\i18n\tk.js" />
+    <Content Include="Admin\Select2\js\i18n\tr.js" />
+    <Content Include="Admin\Select2\js\i18n\uk.js" />
+    <Content Include="Admin\Select2\js\i18n\vi.js" />
+    <Content Include="Admin\Select2\js\i18n\zh-CN.js" />
+    <Content Include="Admin\Select2\js\i18n\zh-TW.js" />
+    <Content Include="Admin\Select2\js\select2.full.js" />
+    <Content Include="Admin\Select2\js\select2.full.min.js" />
+    <Content Include="Admin\Select2\js\select2.js" />
+    <Content Include="Admin\Select2\js\select2.min.js" />
     <Content Include="Color.aspx" />
     <Content Include="css\animate.css" />
     <Content Include="css\aos.css" />
@@ -142,6 +409,10 @@
     <Content Include="css\owl.video.play.html" />
     <Content Include="css\style.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Design\media-2101212020033905041892PM.png" />
+    <Content Include="Design\pharma-2101212020033310751734PM.jpg" />
+    <Content Include="Design\pharma-2101212020033353915807PM.jpg" />
+    <Content Include="Design\pharma-2101212020033804219813PM.jpg" />
     <Content Include="f1.jpg" />
     <Content Include="f2.jpg" />
     <Content Include="f3.jpg" />
@@ -150,6 +421,7 @@
     <Content Include="f6.jpg" />
     <Content Include="f7.jpg" />
     <Content Include="f8.jpg" />
+    <Content Include="Fabric\chemical101212020040025271476PM.jpg" />
     <Content Include="fonts\flaticon\font\Flaticon.svg" />
     <Content Include="fonts\icomoon\icomoonccfb.svg" />
     <Content Include="fonts\ionicons\fonts\ionicons580c.svg" />
@@ -188,13 +460,74 @@
     <Content Include="js\scrollax.min.js" />
     <Content Include="js\webcam.js" />
     <Content Include="js\webcam.min.js" />
+    <Content Include="Lending.aspx" />
     <Content Include="main2.png" />
     <Content Include="main3.png" />
     <Content Include="Main4.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\Design.aspx.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\Design.aspx.designer.cs">
+      <DependentUpon>Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\Fabric.aspx.cs">
+      <DependentUpon>Fabric.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\Fabric.aspx.designer.cs">
+      <DependentUpon>Fabric.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Panel\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Panel\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassFiles\clsAdmin.cs" />
+    <Compile Include="ClassFiles\clsCategory.cs" />
     <Compile Include="ClassFiles\clsColor.cs" />
+    <Compile Include="ClassFiles\clsDesign.cs" />
+    <Compile Include="ClassFiles\clsFabric.cs" />
     <Compile Include="ClassFiles\Connections.cs" />
     <Compile Include="Color.aspx.cs">
       <DependentUpon>Color.aspx</DependentUpon>
@@ -217,6 +550,13 @@
     <Compile Include="Home.Master.designer.cs">
       <DependentUpon>Home.Master</DependentUpon>
     </Compile>
+    <Compile Include="Lending.aspx.cs">
+      <DependentUpon>Lending.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lending.aspx.designer.cs">
+      <DependentUpon>Lending.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -238,6 +578,10 @@
     <Content Include="fonts\open-iconic\open-iconic.woff" />
     <Content Include="fonts\open-iconic\open-iconicd41d.eot" />
     <Content Include="Home.Master" />
+    <Content Include="Admin\app-assets\fonts\icomoon\icomoonc994.eot" />
+    <Content Include="Admin\app-assets\fonts\icomoon\icomoonc994.ttf" />
+    <Content Include="Admin\app-assets\fonts\icomoon\icomoonc994.woff" />
+    <Content Include="Admin\Panel\Admin.Master" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
