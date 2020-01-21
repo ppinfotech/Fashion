@@ -27,7 +27,7 @@ namespace Fashion
             string htm = string.Empty;
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
             {
-                htm += "<div class='col-md-4'><p style='background-color:" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + "; height:15px;'><p></div>";
+                htm += "<div class='col-md-2 col-sm-4 col-lg-2 col-xs-4'><p onclick='fillPallet(this)' style='font-size:1px; height:10px; background-color:" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + "; color:" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + ";'>" + ds.Tables[0].Rows[i]["ColorHex"].ToString() + "<p></div>";
             }
             divColorChart.InnerHtml = htm;
         }

@@ -127,9 +127,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.html" />
     <Content Include="Color.aspx" />
-    <Content Include="contact.html" />
     <Content Include="css\animate.css" />
     <Content Include="css\aos.css" />
     <Content Include="css\bootstrap-datepicker.css" />
@@ -152,7 +150,6 @@
     <Content Include="f6.jpg" />
     <Content Include="f7.jpg" />
     <Content Include="f8.jpg" />
-    <Content Include="fashion.html" />
     <Content Include="fonts\flaticon\font\Flaticon.svg" />
     <Content Include="fonts\icomoon\icomoonccfb.svg" />
     <Content Include="fonts\ionicons\fonts\ionicons580c.svg" />
@@ -173,8 +170,6 @@
     <Content Include="images\image_9.jpg" />
     <Content Include="images\logo.jpeg" />
     <Content Include="images\person_1.jpg" />
-    <Content Include="index-2.html" />
-    <Content Include="index.html" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\google-map.js" />
@@ -196,8 +191,6 @@
     <Content Include="main2.png" />
     <Content Include="main3.png" />
     <Content Include="Main4.png" />
-    <Content Include="single.html" />
-    <Content Include="travel.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +238,7 @@
     <Content Include="fonts\open-iconic\open-iconic.woff" />
     <Content Include="fonts\open-iconic\open-iconicd41d.eot" />
     <Content Include="Home.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
