@@ -11,13 +11,9 @@
                     <h3 class="sidebar-heading">Our All Fabrics</h3>
                     <div class="blog-entry ftco-animate d-md-flex row">
 
-                        <div class="col-md-4 offset-md-5" style="text-align: right;">
-                            <asp:TextBox ID="txtSearch" CssClass="form-control" runat="server"></asp:TextBox>
-
-                        </div>
-                        <div class="col-md-1" style="text-align: right;">
-                            <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-primary" Text="Search" OnClick="btnSearch_Click" />
-
+                        <div class="col-md-12">
+                            <h3>Select Fabric
+                                <asp:DropDownList ID="ddlFabric" CssClass="form-control" OnSelectedIndexChanged="ddlFabric_SelectedIndexChanged" AutoPostBack="true" runat="server"></asp:DropDownList></h3>
                         </div>
                     </div>
                     <div class="blog-entry ftco-animate d-md-flex">

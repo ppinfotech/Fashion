@@ -73,7 +73,7 @@ namespace Fashion.Admin.Panel
                     if (FileUpload1.HasFile)
                     {
                         var _with1 = HttpContext.Current;
-                        string strPath = _with1.Server.MapPath("/Design/");
+                        string strPath = _with1.Server.MapPath("../../Design/");
                         HttpPostedFile postedFile = FileUpload1.PostedFile;
                         string filename = postedFile.FileName;
                         string fileExt1 = System.IO.Path.GetExtension(filename).Replace(".", "");
@@ -106,8 +106,9 @@ namespace Fashion.Admin.Panel
                     divAlert.InnerHtml = "Enter all required fileds";
                 }
             }
-            catch
+            catch (Exception ex)
             {
+                Response.Write(ex.ToString());
             }
         }
 

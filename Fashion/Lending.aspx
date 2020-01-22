@@ -60,9 +60,9 @@
                                 });
                                 Webcam.attach('#my_camera');
                             </script>
-                            <div id="divBG">
-                                <img src="main2.png" id="imgMain" style="background-image: url('f3.jpg'); background-repeat: repeat; width: 100%; background-size: 200px;" />
+                            <div id="divMain" runat="server">
                             </div>
+
                         </div>
 
                         <div class="col-md-12">
@@ -86,15 +86,13 @@
     <div class="col-xl-4 sidebar ftco-animate bg-light pt-5">
 
         <div class="sidebar-box ftco-animate">
-            <h3 class="sidebar-heading">Select Fabric</h3>
-            <img src="f1.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f2.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f3.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f4.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f5.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f6.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f7.jpg" height="100" onclick="fillBG(this)" />
-            <img src="f8.jpg" height="100" onclick="fillBG(this)" />
+            <h3 class="sidebar-heading">Select Fabric
+                <asp:DropDownList ID="ddlFabric" CssClass="form-control" OnSelectedIndexChanged="ddlFabric_SelectedIndexChanged" AutoPostBack="true" runat="server"></asp:DropDownList></h3>
+
+            <div id="divFabric" runat="server" class="row">
+                
+            </div>
+
         </div>
     </div>
 

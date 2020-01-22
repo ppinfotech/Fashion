@@ -29,7 +29,7 @@ namespace Fashion
             string htm = string.Empty;
             for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
             {
-                htm += "<div class='col-md-4 '><a href='Lending.aspx?val=" + ds.Tables[0].Rows[i]["DesignId"].ToString() + "'><img class='img-thumbnail' src='/Design/" + ds.Tables[0].Rows[i]["ImagePath"].ToString() + "'><br><center><p style='font-weight:bold;'>" + ds.Tables[0].Rows[0]["DesignName"].ToString() + "</center></p></a></div>";
+                htm += "<div class='col-md-4 '><a href='Lending.aspx?val=" + ds.Tables[0].Rows[i]["DesignId"].ToString() + "'><img class='img-thumbnail' src='/Design/" + ds.Tables[0].Rows[i]["ImagePath"].ToString() + "'><br><center><p style='font-weight:bold;'>" + ds.Tables[0].Rows[i]["DesignName"].ToString() + "</center></p></a></div>";
             }
             divMain.InnerHtml = htm;
         }

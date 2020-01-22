@@ -13,6 +13,15 @@ namespace Fashion {
     public partial class Lending {
         
         /// <summary>
+        /// divMain control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divMain;
+        
+        /// <summary>
         /// txtColor control.
         /// </summary>
         /// <remarks>
@@ -29,5 +38,23 @@ namespace Fashion {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divColorChart;
+        
+        /// <summary>
+        /// ddlFabric control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlFabric;
+        
+        /// <summary>
+        /// divFabric control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divFabric;
     }
 }

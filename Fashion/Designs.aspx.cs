@@ -24,7 +24,7 @@ namespace Fashion
             string htm = string.Empty;
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                htm += "<div class='col-md-4'><a href='Lending.aspx?val=" + dt.Rows[i]["DesignId"].ToString() + "'><img class='img-thumbnail' src='/Design/" + dt.Rows[i]["ImagePath"].ToString() + "'><br><center><h4>" + dt.Rows[0]["DesignName"].ToString() + "</h4></center></a></div>";
+                htm += "<div class='col-md-4'><a href='Lending.aspx?val=" + dt.Rows[i]["DesignId"].ToString() + "'><img class='img-thumbnail' src='/Design/" + dt.Rows[i]["ImagePath"].ToString() + "'><br><center><h4>" + dt.Rows[i]["DesignName"].ToString() + "</h4></center></a></div>";
             }
             return htm;
         }
